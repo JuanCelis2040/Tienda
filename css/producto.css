@@ -7,6 +7,7 @@ body{
 .container{
     display: flex;
     justify-content: center;
+    gap: 17px;
     
 }
 .card{
@@ -21,11 +22,9 @@ img{
     border-radius: 25%;
     width: 250px;
     height: 220px;
-    gap: 7rem;
 }
 
 .titulo{
     text-align: center;
-
 }
 
