@@ -1,0 +1,68 @@
+.lac{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.fru{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.verdu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+img{
+    width: 150px;
+    height: 130px;
+    border-radius: 25%;
+    transition: 1s ease;
+}
+img:hover{
+    transform: scale(0.5);
+}
+.container{
+    display: flex;
+    justify-content: center;
+    gap: 170px;
+}
+
+nav{
+    padding: 25px;
+    border-radius: 25px;
+    background-color: black;
+    justify-content: center;
+}
+nav ul{
+    list-style: none;
+    align-items: center;
+    gap: 3rem;
+    padding-left: 38%;
+
+}
+ul li{
+    float: left;
+    margin-right: 6%;
+}
+nav ul li a{ 
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    transition: 0.5s ease;    
+    margin: 35%;
+    padding-bottom: 45%px;
+
+}
+
+ul li a:hover{
+    color: #5bcbe7;
+}
+ul:hover li a:not(:hover){
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
