@@ -1,30 +1,100 @@
 body{
-    margin: 0;
-    padding: 0;
     background-color: antiquewhite;
 }
-
-.container{
+header{
     display: flex;
     justify-content: center;
-    gap: 17px;
-    
-}
-.card{
-    transition: 1.0s ease;
+    align-items: center;
+    padding-top: 24px;
+    margin-bottom:20px;
 }
 
-.card:hover{
-    transform: scale(0.5);
+.carrito img{
+    width: 28px;
+    height: 21px;
+    float: right;
+    padding-right: 30px;
+}
+nav{
+    background-color: black;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    border-radius: 30px;
+    width: 600px;
+    left: 490px;
+
+}
+ul{
+    display: flex;
+    gap: 7rem;
+}
+li{
+    display: flex;
+    justify-content: center;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s ease;
+
+}
+select{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+a:hover{
+    opacity: 0.5;
 }
 
 img{
-    border-radius: 25%;
-    width: 250px;
-    height: 220px;
+    width: 410px;
+    height: 260px;
+    border-radius: 25px;
 }
-
-.titulo{
+.container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: rgb(204, 204, 204);
+    padding: 20px;
+    border-radius: 25px;
+}
+.container h5{
+    left: 150px;
+}
+@media (max-width:768px){
+    parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:480px){
+    parent{
+        grid-template-columns: repeat((1, 1fr));
+    }
+}
+button{
+    margin-top: 8px;
+    margin-left: 145px;
+    border-radius: 25px;
+    border-color: transparent;
+    transition: 0.5 ease;
+}
+button:hover{
+    background-color: gray;
+    transform: 0.5;
+}
+h5{
+    background-color: gray;
     text-align: center;
+    width: auto;
+    border-radius: 25px;
+}
+span{
+    margin-left: 183px;
 }
 

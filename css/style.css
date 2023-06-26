@@ -1,7 +1,71 @@
-.porta{
+body{
+    background-color: antiquewhite;
+}
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 24px;
+}
+
+.carrito img{
+    width: 28px;
+    height: 25px;
+    padding-right: 30px;
+    position: relative;
+    margin-left: 25px;
+}
+nav{
+    background-color: black;  
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    border-radius: 30px;
+    width: 600px;
+    left: 490px;
+
+}
+ul{
+    display: flex;
+    gap: 1rem;
+}
+li{
+    display: flex;
+    justify-content: center;
+    
+}
+a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s ease;
+
+}
+select{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
+img{
+    width: 410px;
+    height: 260px;
+    border-radius: 25px;
+}
+.container{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 20px;
+    background-color: rgb(204, 204, 204);
+    padding: 20px;
+    border-radius: 25px;
+}
+.container h5{
+    left: 150px;
 }
 @media (max-width:768px){
     parent{
@@ -13,6 +77,31 @@
         grid-template-columns: repeat((1, 1fr));
     }
 }
-img{
-    width: 550px;
+.contenedor-titulos{
+    background-color: black;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+button{
+    margin-top: 8px;
+    margin-left: 145px;
+    border-radius: 25px;
+    border-color: transparent;
+    transition: 0.5 ease;
+}
+button:hover{
+    background-color: gray;
+    transform: 0.5;
+}
+h5{
+    background-color: gray;
+    text-align: center;
+    width: auto;
+    border-radius: 25px;
+}
+span{
+    margin-left: 183px;
 }

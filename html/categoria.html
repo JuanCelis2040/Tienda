@@ -7,48 +7,200 @@
     <title>Categorias</title>
 </head>
 <body>
-    <nav>
+    <header>
+        <nav>
         <ul>
             <li>
                 <a href="index.html">Inicio</a>
             </li>
-            <li>
-                <a href="categoria.html">Categorias</a>
-            </li>
-            <li>
-                <a href="producto.html">Productos</a>
-            </li>
+                <label for="cat">Categorias</label>
+                <select name="Categorias" id="cate">
+                    <option value="tc"><a href="">Todas las categorias</a></option>
+                    <option value="lt">Lacteos</option>
+                    <option value="ft">Frutas</option>
+                    <option value="vg">Vegetales</option>
+                    <option value="tp"><a href="producto.html">Todos los productos</a></option>
+                </select>
+                <li>
+                    <a href="producto.html">Todos los productos</a>
+                </li>
         </ul>
-    </nav>
 
-    <h1 class="titulo">Categorias</h1>
+    </nav>
+    </header>
+
+    <div class="carrito">
+        <a href="">
+            <img src="../img/carrito.png" alt="">
+        </a>
+    </div>
+
+    <div class="contenedor-titulos">
+        <div class="titulo">
+            <h2>Lacteos</h2>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="card"><img src="../img/leche.jpg" alt="" class="card-img">
+        <form action="#">
+            <div class="form">
+                <h5>Leche</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </div>
+        </form>
+        </div>
+        <div class="card"><img src="../img/yodur.WEBP" alt="" class="card-img">
+            <form action="#">
+                <h5>Yogurt</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </form>
+        </div>
+        <div class="card"><img src="../img/queso.png" alt="" class="card-img">
+            <form action="#">
+                <h5>Queso</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </form>
+        </div>
+        <div class="card"><img src="../img/queso.WEBP" alt="" class="card-img">
+            <form action="#">
+                <h5>Mantequilla</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </form>
+        </div>
+        <div class="card"><img src="../img/cuajada.JPEG" alt="" class="card-img">
+            <form action="#">
+                <h5>Cuajada</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </form>
+    </div>
+        <div class="card"><img src="..//img/requeson.WEBP" alt="" class="card-img">
+            <form action="#">
+                <h5>Requeson</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="contenedor-titulos">
+        <div class="titulo">
+            <h2>Frutas</h2>
+        </div>
+    </div>
 
     <div class="container">
-        <div class="lac">
-            <li>
-                <a href="productos.html">Lacteos</a>
-            </li>
-        <div class="container-lacteos">
-            <div class="card"><img src="../img/leche.jpg" alt="" class="card-image"></div>
+        <div class="card">
+            <img src="../img/manzana.jpg" alt="" class="card-img">
+            <from>
+                <h5>Manzana</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
         </div>
+        <div class="card">
+            <img src="../img/mango.jpg" alt="" class="card-img">
+            <from>
+                <h5>Mango</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
         </div>
-        <div class="fru">
-            <li>
-                <a href="producto.html">Frutas</a>
-            </li>
-        <div class="container-frutas">
-            <div class="card"><img src="../img/manzana.jpg" alt="" class="card-image"></div>
+        <div class="card">
+            <img src="../img/pera.jpg" alt="" class="card-img">
+            <from>
+                <h5>Pera</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
         </div>
+        <div class="card">
+            <img src="../img/papaya.JPEG" alt="" class="card-img">
+            <from>
+                <h5>Papaya</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
         </div>
-        <div class="verdu">
-            <li>
-                <a href="producto.html">container-verduras</a>
-            </li>
-        <div class="container-verduras">
-            <div class="card"><img src="../img/zanahoria.jpg" alt="" class="card-image"></div>
+        <div class="card">
+            <img src="../img/uva.JPEG" alt="" class="card-img">
+            <from>
+                <h5>Uvas</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
+        </div>
+        <div class="card">
+            <img src="../img/piña.AVIF" alt="" class="card-img">
+            <from>
+                <h5>Piña</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
+        </div>
+    </div>
 
+    <div class="contenedor-titulos">
+        <div class="titulo">
+            <h2>Vegetales</h2>
         </div>
+    </div>
+
+    <div class="container">
+        <div class="card">
+            <img src="../img/cbolla.jpg" alt="" class="card-img">
+            <from>
+                <h5>Cebolla</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
+        </div>
+        <div class="card">
+            <img src="../img/brocoli.jpg" alt="" class="card-img">
+            <from>
+                <h5>Brocoli</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
+        </div>
+        <div class="card">
+            <img src="../img/tomate.WEBP" alt="" class="card-img">
+            <from>
+                <h5>Tomate</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
+        </div>
+        <div class="card">
+            <img src="../img/zanahoria.jpg" alt="" class="card-img">
+            <from>
+                <h5>Zanahoria</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
+        </div>
+        <div class="card">
+            <img src="../img/remolacha.JPEG" alt="" class="card-img">
+            <from>
+                <h5>Remolacha</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
+        </div>
+        <div class="card">
+            <img src="../img/lechuga.JPEG" alt="" class="card-img">
+            <from>
+                <h5>Lechuga</h5>
+                <span>$3.000</span><br>
+                <button type="submit">Agregar al carrito</button>
+            </from>
         </div>
     </div>
 </body>
-</html>
+</html>                     

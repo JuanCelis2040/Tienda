@@ -1,68 +1,107 @@
-.lac{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
+body{
+    background-color: antiquewhite;
 }
-.fru{
+header{
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-top: 24px;
 }
-.verdu{
+
+.carrito img{
+    width: 28px;
+    height: 25px;
+    padding-right: 30px;
+    position: relative;
+    margin-left: 25px;
+}
+nav{
+    background-color: black;  
     display: flex;
-    flex-direction: column;
+    align-items: center;
+    justify-content: center;  
+    border-radius: 30px;
+    width: 600px;
+    left: 490px;
+
+}
+ul{
+    display: flex;
+    gap: 1rem;
+}
+li{
+    display: flex;
     justify-content: center;
-    align-items: flex-end;
+    
 }
+a{
+    color: white;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.5s ease;
+
+}
+select{
+    background-color: black;
+    color: white;
+    border-color: black;
+}
+
+a:hover{
+    opacity: 0.5;
+}
+
 img{
-    width: 150px;
-    height: 130px;
-    border-radius: 25%;
-    transition: 1s ease;
-}
-img:hover{
-    transform: scale(0.5);
+    width: 410px;
+    height: 260px;
+    border-radius: 25px;
 }
 .container{
-    display: flex;
-    justify-content: center;
-    gap: 170px;
-}
-
-nav{
-    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    background-color: rgb(204, 204, 204);
+    padding: 20px;
     border-radius: 25px;
+}
+.container h5{
+    left: 150px;
+}
+@media (max-width:768px){
+    parent{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width:480px){
+    parent{
+        grid-template-columns: repeat((1, 1fr));
+    }
+}
+.contenedor-titulos{
     background-color: black;
+    border-radius: 30px;
+    color: white;
+    text-align: center;
     justify-content: center;
-}
-nav ul{
-    list-style: none;
     align-items: center;
-    gap: 3rem;
-    padding-left: 38%;
-
 }
-ul li{
-    float: left;
-    margin-right: 6%;
+button{
+    margin-top: 8px;
+    margin-left: 145px;
+    border-radius: 25px;
+    border-color: transparent;
+    transition: 0.5 ease;
 }
-nav ul li a{ 
-    text-decoration: none;
-    color: white;
-    font-size: 1.2rem;
-    transition: 0.5s ease;    
-    margin: 35%;
-    padding-bottom: 45%px;
-
+button:hover{
+    background-color: gray;
+    transform: 0.5;
 }
-
-ul li a:hover{
-    color: #5bcbe7;
+h5{
+    background-color: gray;
+    text-align: center;
+    width: auto;
+    border-radius: 25px;
 }
-ul:hover li a:not(:hover){
-    color: white;
-    opacity: 0.3;
-    filter: blur(1px);
+span{
+    margin-left: 183px;
 }
