@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/categoria.css">
+    <script src="/js/js.js"></script>
     <title>Categorias</title>
 </head>
 <body>
@@ -29,11 +30,13 @@
     </nav>
     </header>
 
-    <div class="carrito">
-        <a href="">
-            <img src="../img/carrito.png" alt="">
-        </a>
-    </div>
+    <article id="contcarrito">
+        <figure id="carri">
+            <img id="carrito" src="../img/cart.png" alt="">
+        </figure>
+        <span id="contador">0</span>
+    </article>
+    
 
     <div class="contenedor-titulos">
         <div class="titulo">
@@ -47,7 +50,8 @@
             <div class="form">
                 <h5>Leche</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </div>
         </form>
         </div>
@@ -55,35 +59,40 @@
             <form action="#">
                 <h5>Yogurt</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </form>
         </div>
         <div class="card"><img src="../img/queso.png" alt="" class="card-img">
             <form action="#">
                 <h5>Queso</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </form>
         </div>
         <div class="card"><img src="../img/queso.WEBP" alt="" class="card-img">
             <form action="#">
                 <h5>Mantequilla</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </form>
         </div>
         <div class="card"><img src="../img/cuajada.JPEG" alt="" class="card-img">
             <form action="#">
                 <h5>Cuajada</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </form>
     </div>
         <div class="card"><img src="..//img/requeson.WEBP" alt="" class="card-img">
             <form action="#">
                 <h5>Requeson</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </form>
         </div>
 
@@ -101,7 +110,8 @@
             <from>
                 <h5>Manzana</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -109,7 +119,8 @@
             <from>
                 <h5>Mango</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -117,7 +128,8 @@
             <from>
                 <h5>Pera</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -125,7 +137,8 @@
             <from>
                 <h5>Papaya</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -133,7 +146,8 @@
             <from>
                 <h5>Uvas</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -141,7 +155,8 @@
             <from>
                 <h5>Piña</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
     </div>
@@ -158,7 +173,8 @@
             <from>
                 <h5>Cebolla</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -166,7 +182,8 @@
             <from>
                 <h5>Brocoli</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -174,7 +191,8 @@
             <from>
                 <h5>Tomate</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -182,7 +200,8 @@
             <from>
                 <h5>Zanahoria</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -190,7 +209,8 @@
             <from>
                 <h5>Remolacha</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
         <div class="card">
@@ -198,7 +218,8 @@
             <from>
                 <h5>Lechuga</h5>
                 <span>$3.000</span><br>
-                <button type="submit">Agregar al carrito</button>
+                <button class="comprar"><a class="comprarColor" onclick="incrementarContador()" href="#">COMPRAR</a></button>
+                <button class="comprar"><a class="comprarColor" onclick="disminuirContador()" href="#">ELIMINAR</a></button>
             </from>
         </div>
     </div>
